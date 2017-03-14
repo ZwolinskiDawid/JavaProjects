@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/C:/Users/Dawid/Desktop/Projects/Platformy/Lab4/App/products.xsd" uri="xml-resources/jaxb/productBinding/products.xsd"/>
+</catalog>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700" prefWidth="700" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.mainController">
+    <TableView fx:id="imageProcessingJobTable" prefHeight="400.0" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10"  >
+        <TableColumn fx:id="imageNameColumn" text="Image Name" prefWidth="200" />
+        <TableColumn fx:id="progressColumn" text="Progress" prefWidth="130" />
+        <TableColumn fx:id="statusColumn" text="Status" prefWidth="130" />
+    </TableView>
+    
+    <Label text="Destination directory : " AnchorPane.leftAnchor="420" AnchorPane.topAnchor="10"   />  
+    <Label fx:id="destinationDirectoryLabel" text="" AnchorPane.leftAnchor="420" AnchorPane.topAnchor="40"/>
+    <Label text="Sequential time : "AnchorPane.leftAnchor="420" AnchorPane.topAnchor="70"/>  
+    <Label fx:id="sequentialTimeLabel" text=""AnchorPane.leftAnchor="420" AnchorPane.topAnchor="100"/>   
+    <Label text="Parallel time : "AnchorPane.leftAnchor="420" AnchorPane.topAnchor="130"/>  
+    <Label fx:id="parallelTimeLabel" text=""AnchorPane.leftAnchor="420" AnchorPane.topAnchor="160"/>   
+    <Label text="Differential : "AnchorPane.leftAnchor="420" AnchorPane.topAnchor="190"/>  
+    <Label fx:id="differentialLabel" text=""AnchorPane.leftAnchor="420" AnchorPane.topAnchor="220"/>   
+    <Button text="Choose files" onAction="#chooseFiles" prefWidth="200"AnchorPane.leftAnchor="420" AnchorPane.topAnchor="250"/>
+    <Button text="Choose destination directory" onAction="#chooseDestinationDirectory" prefWidth="200"AnchorPane.leftAnchor="420" AnchorPane.topAnchor="280"/>
+    <Label text="Sequential conversion" AnchorPane.leftAnchor="420" AnchorPane.topAnchor="310"/>
+    <Button text="Start" onAction="#startConversionSequential" prefWidth="200"AnchorPane.leftAnchor="420" AnchorPane.topAnchor="340"/>
+    <Label text="Parallel conversion" AnchorPane.leftAnchor="420" AnchorPane.topAnchor="370"/>
+    <Label text="Number of threads : "AnchorPane.leftAnchor="420" AnchorPane.topAnchor="400"/>
+    <TextField fx:id="numberOfThreadsTextField" text="" prefWidth="40"AnchorPane.leftAnchor="420" AnchorPane.topAnchor="430"/>     
+    <Button text="Custom start" onAction="#startConversionParallel" prefWidth="200"AnchorPane.leftAnchor="420" AnchorPane.topAnchor="460"/>
+    <Button text="Default start" onAction="#startConversionParallelDefault" prefWidth="200"AnchorPane.leftAnchor="420" AnchorPane.topAnchor="490"/>
+    <Button text="Clear" onAction="#clearTable" prefWidth="200"AnchorPane.leftAnchor="420" AnchorPane.topAnchor="520"/>
+    
+    
+</AnchorPane>

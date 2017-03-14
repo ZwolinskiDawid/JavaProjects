@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="100" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.ReportController">
+    <Label fx:id="label1" text="" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" />
+    <Label fx:id="label2" text="" AnchorPane.topAnchor="40" AnchorPane.leftAnchor="20" />
+    <Label fx:id="label3" text="" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="20" />
+</AnchorPane>

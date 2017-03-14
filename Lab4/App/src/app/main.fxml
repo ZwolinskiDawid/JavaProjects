@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700" prefWidth="500" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.mainController">
+    <Label style="-fx-font: NORMAL 20 Tahoma;"  text="Product Catalog"  AnchorPane.leftAnchor="10" AnchorPane.topAnchor="20" />
+    <TableView fx:id="table" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10" >
+     <columns>
+        <TableColumn fx:id="nameColumn" text="Name" prefWidth="320" />
+        <TableColumn fx:id="priceColumn" text="Price" prefWidth="80" />
+        <TableColumn fx:id="currencyColumn" text="Currency" prefWidth="80" />
+     </columns>    
+    </TableView>
+    <TextField fx:id="nameField" prefWidth="200" text="Name" AnchorPane.topAnchor="470" AnchorPane.leftAnchor="10" />
+    <TextField fx:id="priceField" prefWidth="60" text="Price" AnchorPane.topAnchor="470" AnchorPane.leftAnchor="220" />
+    <TextField fx:id="currentField" prefWidth="60" text="Current" AnchorPane.topAnchor="470" AnchorPane.leftAnchor="290" />
+    <Button text="Add" onAction="#addAction" AnchorPane.topAnchor="470" AnchorPane.leftAnchor="360" />
+    <Button text="Load" onAction="#loadAction" AnchorPane.topAnchor="500" AnchorPane.leftAnchor="10" />  
+    <Button text="Save" onAction="#saveAction" AnchorPane.topAnchor="500" AnchorPane.leftAnchor="60" />  
+    <Button text="Remove" onAction="#removeAction" AnchorPane.topAnchor="500" AnchorPane.leftAnchor="110" />  
+</AnchorPane>

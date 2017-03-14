@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="App.MainController">
+    <children>
+        <TreeView fx:id="treeView" prefHeight="555" prefWidth="400" />
+        <FlowPane hgap="10" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="10" >
+            <children>
+                <Button fx:id="chooseButton" onAction="#changeRootButtonAction">Choose Root</Button>
+                <Button fx:id="deleteButton" onAction="#deleteButtonAction">Delete file!</Button>
+            </children>
+        </FlowPane>
+    </children>
+</AnchorPane>

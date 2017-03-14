@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="100.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.ProgressGUIController">
+    <ProgressBar fx:id="progressBar" prefWidth="370" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="15"  />
+    <Label fx:id="label" AnchorPane.topAnchor="40"  AnchorPane.leftAnchor="20" prefWidth="360"  />
+    <Button fx:id="close" onAction="#closeAction" AnchorPane.topAnchor="70"  AnchorPane.rightAnchor="20">Close</Button>
+</AnchorPane>

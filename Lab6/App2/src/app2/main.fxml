@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.geometry.Insets?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" id="AnchorPane" 
+           fx:controller="app2.mainController" >
+    <VBox spacing="10">
+        <HBox.margin>
+            <Insets>
+                <left>20</left>
+                <right>20</right>
+                <top>20</top>
+                <bottom>20</bottom>
+            </Insets>
+        </HBox.margin>
+        <TableView fx:id="imageProcessingJobTable" styleClass="studentCatalogTable" prefHeight="400.0" >
+            <columns>
+                <TableColumn fx:id="imageNameColumn" text="Image Name" prefWidth="200" />
+                <TableColumn fx:id="progressColumn" text="Progress" prefWidth="130" />
+                <TableColumn fx:id="statusColumn" text="Status" prefWidth="130" />
+            </columns>
+        </TableView> 
+    </VBox> 
+    <VBox prefHeight="40" spacing="10" >
+        <HBox.margin>
+            <Insets>
+                <left>0</left>
+                <right>20</right>
+                <top>20</top>
+                <bottom>20</bottom>
+            </Insets>
+        </HBox.margin>
+        <Button text="Choose Images" onAction="#chooseFiles" prefWidth="200"/>
+        
+        <Button text="Sequential Conversion" onAction="#startConversionSequential" prefWidth="200"/>
+        
+        <HBox prefHeight="20"> 
+            <Label text="Number of threads : "/>
+            <TextField fx:id="numberOfThreadsTextField" text="" prefWidth="40"/>     
+        </HBox>
+        <Button text="Parallel Conversion" onAction="#startConversionParallel" prefWidth="200"/>
+        <Button text="Clear Table" onAction="#clearTable" prefWidth="200"/>
+        
+        <HBox prefHeight="20"> 
+            <Label text="Sequential time : "/>  
+            <Label fx:id="sequentialTimeLabel" text=""/>   
+        </HBox>
+        <HBox prefHeight="20"> 
+            <Label text="Parallel time : "/>  
+            <Label fx:id="parallelTimeLabel" text=""/>   
+        </HBox>
+        <HBox prefHeight="20"> 
+            <Label text="Differential : "/>  
+            <Label fx:id="differentialLabel" text=""/>   
+        </HBox>
+    </VBox>
+</HBox>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="170" prefWidth="300" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="App.NewFileGUIController">
+    <Label text="File name:" AnchorPane.topAnchor="50" AnchorPane.leftAnchor="30" />
+    <TextField fx:id="name" AnchorPane.topAnchor="47" AnchorPane.leftAnchor="100" />
+    <fx:define>
+        <ToggleGroup fx:id="myToggleGroup"/>
+    </fx:define>
+    <RadioButton toggleGroup="$myToggleGroup" selected="true" fx:id="normalFile" text="normal file" AnchorPane.leftAnchor="50" AnchorPane.topAnchor="90" />
+    <RadioButton toggleGroup="$myToggleGroup" fx:id="directory" text="directory" AnchorPane.leftAnchor="50" AnchorPane.topAnchor="120" />
+    <Button fx:id="addButton" onAction="#addButtonAction" AnchorPane.bottomAnchor="20" AnchorPane.rightAnchor="20">Create</Button>
+</AnchorPane>

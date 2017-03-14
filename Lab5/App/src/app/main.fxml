@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.cell.*?> 
+<?import javafx.collections.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700" prefWidth="500" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.mainController">
+    <Label style="-fx-font: NORMAL 20 Tahoma;"  text="Student Catalog"  AnchorPane.leftAnchor="10" AnchorPane.topAnchor="20" />
+    <TableView fx:id="table" AnchorPane.topAnchor="60" AnchorPane.leftAnchor="10" >
+     <columns>
+        <TableColumn fx:id="nameColumn" text="Name" prefWidth="180" />
+        <TableColumn fx:id="sNameColumn" text="Surname" prefWidth="180" />
+        <TableColumn fx:id="departmentColumn" text="Department" prefWidth="120" />
+     </columns>    
+    </TableView>
+    <TextField fx:id="nameField" prefWidth="135" text="Name" AnchorPane.topAnchor="470" AnchorPane.leftAnchor="10" />
+    <TextField fx:id="sNameField" prefWidth="135" text="Surname" AnchorPane.topAnchor="470" AnchorPane.leftAnchor="155" />
+    <Button text="Add" onAction="#addAction" AnchorPane.topAnchor="470" AnchorPane.rightAnchor="71" />
+    <Button text="Report" onAction="#reportAction" AnchorPane.topAnchor="470" AnchorPane.rightAnchor="10" /> 
+    <ChoiceBox fx:id="departmentBox" prefWidth="80" AnchorPane.topAnchor="470" AnchorPane.rightAnchor="119" />  
+    <Label style="-fx-font: NORMAL 20 Tahoma;"  text="Department Catalog"  AnchorPane.leftAnchor="10" AnchorPane.bottomAnchor="165" />
+    <TableView fx:id="depTable" prefHeight="140"  AnchorPane.bottomAnchor="10"  AnchorPane.leftAnchor="10" >
+     <columns>
+        <TableColumn fx:id="depNameColumn" text="Name" prefWidth="360" />
+        <TableColumn fx:id="depSNameColumn" text="Short Name" prefWidth="120" />
+     </columns>    
+    </TableView>
+</AnchorPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="App.MainController">
+    <children>
+        <TreeView fx:id="treeView" prefHeight="465" prefWidth="400" />
+        <Button fx:id="chooseButton" onAction="#changeRootButtonAction" 
+                AnchorPane.bottomAnchor="130" AnchorPane.leftAnchor="10">Choose Root</Button>
+        <CheckBox AnchorPane.bottomAnchor="95" text="compress" AnchorPane.leftAnchor="20" />        
+        <CheckBox AnchorPane.bottomAnchor="95" text="encryption" AnchorPane.leftAnchor="130" />                
+        <Label text="server:" AnchorPane.bottomAnchor="55" AnchorPane.leftAnchor="20" />
+        <TextField fx:id="server" AnchorPane.bottomAnchor="50" AnchorPane.leftAnchor="65" />
+        <Label text="port:" AnchorPane.bottomAnchor="15" AnchorPane.leftAnchor="20" />
+        <TextField fx:id="port" AnchorPane.bottomAnchor="10" AnchorPane.leftAnchor="65" />
+    </children>
+</AnchorPane>
